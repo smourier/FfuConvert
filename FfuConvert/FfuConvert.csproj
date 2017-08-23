@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1CC9842D-A998-45C2-83D4-7D80BEBCE1C1}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>FfuConvert</RootNamespace>
+    <AssemblyName>FfuConvert</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DiscUtils, Version=0.13.0.0, Culture=neutral, PublicKeyToken=5fa5b410cc9c6289, processorArchitecture=MSIL">
+      <HintPath>..\packages\DiscUtils.0.13.0-alpha\lib\net45\DiscUtils.dll</HintPath>
+    </Reference>
+    <Reference Include="DiscUtils.BootConfig, Version=0.13.0.0, Culture=neutral, PublicKeyToken=5fa5b410cc9c6289, processorArchitecture=MSIL">
+      <HintPath>..\packages\DiscUtils.BootConfig.0.13.0-alpha\lib\net45\DiscUtils.BootConfig.dll</HintPath>
+    </Reference>
+    <Reference Include="DiscUtils.Core, Version=0.13.0.0, Culture=neutral, PublicKeyToken=5fa5b410cc9c6289, processorArchitecture=MSIL">
+      <HintPath>..\packages\DiscUtils.Core.0.13.0-alpha\lib\net45\DiscUtils.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DiscUtils.Dmg, Version=0.13.0.0, Culture=neutral, PublicKeyToken=5fa5b410cc9c6289, processorArchitecture=MSIL">
+      <HintPath>..\packages\DiscUtils.Dmg.0.13.0-alpha\lib\net45\DiscUtils.Dmg.dll</HintPath>
+    </Reference>
+    <Reference Include="DiscUtils.Ext, Version=0.13.0.0, Culture=neutral, PublicKeyToken=5fa5b410cc9c6289, processorArchitecture=MSIL">
+      <HintPath>..\packages\DiscUtils.Ext.0.13.0-alpha\lib\net45\DiscUtils.Ext.dll</HintPath>
+    </Reference>
+    <Reference Include="DiscUtils.Fat, Version=0.13.0.0, Culture=neutral, PublicKeyToken=5fa5b410cc9c6289, processorArchitecture=MSIL">
+      <HintPath>..\packages\DiscUtils.Fat.0.13.0-alpha\lib\net45\DiscUtils.Fat.dll</HintPath>
+    </Reference>
+    <Reference Include="DiscUtils.HfsPlus, Version=0.13.0.0, Culture=neutral, PublicKeyToken=5fa5b410cc9c6289, processorArchitecture=MSIL">
+      <HintPath>..\packages\DiscUtils.HfsPlus.0.13.0-alpha\lib\net45\DiscUtils.HfsPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="DiscUtils.Iscsi, Version=0.13.0.0, Culture=neutral, PublicKeyToken=5fa5b410cc9c6289, processorArchitecture=MSIL">
+      <HintPath>..\packages\DiscUtils.Iscsi.0.13.0-alpha\lib\net45\DiscUtils.Iscsi.dll</HintPath>
+    </Reference>
+    <Reference Include="DiscUtils.Iso9660, Version=0.13.0.0, Culture=neutral, PublicKeyToken=5fa5b410cc9c6289, processorArchitecture=MSIL">
+      <HintPath>..\packages\DiscUtils.Iso9660.0.13.0-alpha\lib\net45\DiscUtils.Iso9660.dll</HintPath>
+    </Reference>
+    <Reference Include="DiscUtils.Lvm, Version=0.13.0.0, Culture=neutral, PublicKeyToken=5fa5b410cc9c6289, processorArchitecture=MSIL">
+      <HintPath>..\packages\DiscUtils.Lvm.0.13.0-alpha\lib\net45\DiscUtils.Lvm.dll</HintPath>
+    </Reference>
+    <Reference Include="DiscUtils.Net, Version=0.13.0.0, Culture=neutral, PublicKeyToken=5fa5b410cc9c6289, processorArchitecture=MSIL">
+      <HintPath>..\packages\DiscUtils.Net.0.13.0-alpha\lib\net45\DiscUtils.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="DiscUtils.Nfs, Version=0.13.0.0, Culture=neutral, PublicKeyToken=5fa5b410cc9c6289, processorArchitecture=MSIL">
+      <HintPath>..\packages\DiscUtils.Nfs.0.13.0-alpha\lib\net45\DiscUtils.Nfs.dll</HintPath>
+    </Reference>
+    <Reference Include="DiscUtils.Ntfs, Version=0.13.0.0, Culture=neutral, PublicKeyToken=5fa5b410cc9c6289, processorArchitecture=MSIL">
+      <HintPath>..\packages\DiscUtils.Ntfs.0.13.0-alpha\lib\net45\DiscUtils.Ntfs.dll</HintPath>
+    </Reference>
+    <Reference Include="DiscUtils.OpticalDiscSharing, Version=0.13.0.0, Culture=neutral, PublicKeyToken=5fa5b410cc9c6289, processorArchitecture=MSIL">
+      <HintPath>..\packages\DiscUtils.OpticalDiscSharing.0.13.0-alpha\lib\net45\DiscUtils.OpticalDiscSharing.dll</HintPath>
+    </Reference>
+    <Reference Include="DiscUtils.OpticalDisk, Version=0.13.0.0, Culture=neutral, PublicKeyToken=5fa5b410cc9c6289, processorArchitecture=MSIL">
+      <HintPath>..\packages\DiscUtils.OpticalDisk.0.13.0-alpha\lib\net45\DiscUtils.OpticalDisk.dll</HintPath>
+    </Reference>
+    <Reference Include="DiscUtils.Registry, Version=0.13.0.0, Culture=neutral, PublicKeyToken=5fa5b410cc9c6289, processorArchitecture=MSIL">
+      <HintPath>..\packages\DiscUtils.Registry.0.13.0-alpha\lib\net45\DiscUtils.Registry.dll</HintPath>
+    </Reference>
+    <Reference Include="DiscUtils.Sdi, Version=0.13.0.0, Culture=neutral, PublicKeyToken=5fa5b410cc9c6289, processorArchitecture=MSIL">
+      <HintPath>..\packages\DiscUtils.Sdi.0.13.0-alpha\lib\net45\DiscUtils.Sdi.dll</HintPath>
+    </Reference>
+    <Reference Include="DiscUtils.SquashFs, Version=0.13.0.0, Culture=neutral, PublicKeyToken=5fa5b410cc9c6289, processorArchitecture=MSIL">
+      <HintPath>..\packages\DiscUtils.SquashFs.0.13.0-alpha\lib\net45\DiscUtils.SquashFs.dll</HintPath>
+    </Reference>
+    <Reference Include="DiscUtils.Streams, Version=0.13.0.0, Culture=neutral, PublicKeyToken=5fa5b410cc9c6289, processorArchitecture=MSIL">
+      <HintPath>..\packages\DiscUtils.Streams.0.13.0-alpha\lib\net45\DiscUtils.Streams.dll</HintPath>
+    </Reference>
+    <Reference Include="DiscUtils.Swap, Version=0.13.0.0, Culture=neutral, PublicKeyToken=5fa5b410cc9c6289, processorArchitecture=MSIL">
+      <HintPath>..\packages\DiscUtils.Swap.0.13.0-alpha\lib\net45\DiscUtils.Swap.dll</HintPath>
+    </Reference>
+    <Reference Include="DiscUtils.Udf, Version=0.13.0.0, Culture=neutral, PublicKeyToken=5fa5b410cc9c6289, processorArchitecture=MSIL">
+      <HintPath>..\packages\DiscUtils.Udf.0.13.0-alpha\lib\net45\DiscUtils.Udf.dll</HintPath>
+    </Reference>
+    <Reference Include="DiscUtils.Vdi, Version=0.13.0.0, Culture=neutral, PublicKeyToken=5fa5b410cc9c6289, processorArchitecture=MSIL">
+      <HintPath>..\packages\DiscUtils.Vdi.0.13.0-alpha\lib\net45\DiscUtils.Vdi.dll</HintPath>
+    </Reference>
+    <Reference Include="DiscUtils.Vhd, Version=0.13.0.0, Culture=neutral, PublicKeyToken=5fa5b410cc9c6289, processorArchitecture=MSIL">
+      <HintPath>..\packages\DiscUtils.Vhd.0.13.0-alpha\lib\net45\DiscUtils.Vhd.dll</HintPath>
+    </Reference>
+    <Reference Include="DiscUtils.Vhdx, Version=0.13.0.0, Culture=neutral, PublicKeyToken=5fa5b410cc9c6289, processorArchitecture=MSIL">
+      <HintPath>..\packages\DiscUtils.Vhdx.0.13.0-alpha\lib\net45\DiscUtils.Vhdx.dll</HintPath>
+    </Reference>
+    <Reference Include="DiscUtils.Vmdk, Version=0.13.0.0, Culture=neutral, PublicKeyToken=5fa5b410cc9c6289, processorArchitecture=MSIL">
+      <HintPath>..\packages\DiscUtils.Vmdk.0.13.0-alpha\lib\net45\DiscUtils.Vmdk.dll</HintPath>
+    </Reference>
+    <Reference Include="DiscUtils.Wim, Version=0.13.0.0, Culture=neutral, PublicKeyToken=5fa5b410cc9c6289, processorArchitecture=MSIL">
+      <HintPath>..\packages\DiscUtils.Wim.0.13.0-alpha\lib\net45\DiscUtils.Wim.dll</HintPath>
+    </Reference>
+    <Reference Include="DiscUtils.Xfs, Version=0.13.0.0, Culture=neutral, PublicKeyToken=5fa5b410cc9c6289, processorArchitecture=MSIL">
+      <HintPath>..\packages\DiscUtils.Xfs.0.13.0-alpha\lib\net45\DiscUtils.Xfs.dll</HintPath>
+    </Reference>
+    <Reference Include="DiscUtils.Xva, Version=0.13.0.0, Culture=neutral, PublicKeyToken=5fa5b410cc9c6289, processorArchitecture=MSIL">
+      <HintPath>..\packages\DiscUtils.Xva.0.13.0-alpha\lib\net45\DiscUtils.Xva.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FfuFile.cs" />
+    <Compile Include="FfuFileBlock.cs" />
+    <Compile Include="FfuFileStore.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\AssemblyVersionInfo.cs" />
+    <Compile Include="Utilities\AssemblyUtilities.cs" />
+    <Compile Include="Utilities\CommandLine.cs" />
+    <Compile Include="Utilities\Context.cs" />
+    <Compile Include="Utilities\Conversions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
