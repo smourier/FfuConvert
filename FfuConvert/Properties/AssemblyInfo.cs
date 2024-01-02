@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 #endif
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("FfuConvert")]
-[assembly: AssemblyCopyright("Copyright (C) 2017 Simon Mourier. All rights reserved.")]
+[assembly: AssemblyCopyright("Copyright (C) 2017-2024 Simon Mourier. All rights reserved.")]
 [assembly: AssemblyTrademark("FfuConvert (TM) is a trademark of Simon Mourier.")]
 [assembly: AssemblyCulture("")]
 [assembly: ComVisible(false)]
